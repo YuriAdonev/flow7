@@ -1,0 +1,24 @@
+.equipment-accounting-table {
+  margin-top: 30px;
+  &__invent-number {
+    width: 155px;
+  }
+  &__name {
+
+  }
+  &__division {
+    width: 200px;
+  }
+  &__manufacture {
+    width: 200px;
+  }
+  &__factory-number {
+    width: 160px;
+  }
+  &__date {
+    width: 160px;
+  }
+  &__device {
+    width: 140px;
+  }
+}

@@ -1,0 +1,141 @@
+.settings-apps {
+  margin-top: 30px;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 35px;
+  }
+}
+.settings-apps-item {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 170px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+
+  border: 2px solid #E7ECF8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &__header {
+    display: flex;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+
+    background-color: #113FB4;
+    border-radius: 4px;
+    svg {
+      display: block;
+      fill: #fff;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #113FB4;
+  }
+  &__description {
+    width: 257px;
+    margin: 15px 0 0;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #596890;
+  }
+  &__depends {
+    display: flex;
+    margin-top: 11px;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "IBMPlexSansBold", sans-serif;
+    color: #596890;
+    span {
+      display: block;
+      width: 76px;
+
+      color: #9AA3BA;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    height: 20px;
+    padding-top: 2px;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #9AA3BA;
+
+    border: 1px solid #9AA3BA;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    outline: none;
+  }
+  &.active {
+    .settings-apps-item__btn {
+      color: #00C850;
+      border-color: #00C850;
+    }
+  }
+}
+.settings-apps-item-actions {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+
+    background-color: #E7ECF8;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    svg {
+      display: block;
+      fill: #596890;
+
+      transition: 0.2s linear;
+    }
+    &:hover {
+      background-color: #596890;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  &.active {
+    .settings-apps-item-actions__btn {
+      background-color: #596890;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}

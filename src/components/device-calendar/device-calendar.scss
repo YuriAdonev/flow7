@@ -1,0 +1,60 @@
+.device-calendar {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 206px;
+  }
+}
+
+.device-calendar-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+    &:nth-child(1) {
+      .device-calendar-legend__mark {
+        background-color: rgba(#113FB4, 0.2);
+      }
+    }
+    &:nth-child(2) {
+      .device-calendar-legend__mark {
+        background-color: #9693F0;
+      }
+    }
+    &:nth-child(3) {
+      .device-calendar-legend__mark {
+        background-color: #A773EA;
+      }
+    }
+    &:nth-child(4) {
+      .device-calendar-legend__mark {
+        background-color: #640C9A;
+      }
+    }
+    &.current {
+      .device-calendar-legend__mark {
+        background-color: #B4115F;
+      }
+    }
+  }
+  &__mark {
+    width: 9px;
+    height: 9px;
+    margin-right: 11px;
+
+    border-radius: 50%;
+  }
+  &__desc {
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #596890;
+  }
+}

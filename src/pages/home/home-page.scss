@@ -1,0 +1,85 @@
+.home {
+  padding-bottom: 60px;
+}
+
+.home-triggers {
+  padding: 0 35px;
+  &__item {}
+}
+
+.home-equipment {
+
+}
+
+.home-equipment-head {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+  padding: 0 35px;
+  &__datepicker {
+    margin-left: auto;
+  }
+}
+
+.home-equipment-intensity {
+  margin-top: 20px;
+  padding: 0 35px;
+  &__calendar {}
+}
+
+.home-equipment-indicators {
+  margin-top: 30px;
+  padding: 0 35px;
+  &__wrap {
+    display: flex;
+    margin: 16px 0 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+    height: 60px;
+    padding: 0 10px;
+
+    background-color: #F2F3F7;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__value {
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+
+    span {
+      font-size: 12px;
+    }
+
+    &--red {
+      color: #C80000;
+    }
+    &--blue {
+      color: #113FB4;
+    }
+  }
+  &__desc {
+    margin-top: 4px;
+
+    font-size: 10px;
+    line-height: 13px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #9AA3BA;
+  }
+}
+
+.home-equipment-table {
+  margin-top: 50px;
+  .inner-title {
+    padding: 0 35px;
+  }
+}

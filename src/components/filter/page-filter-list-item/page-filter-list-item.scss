@@ -1,0 +1,158 @@
+.page-filter-list-item {
+  position: relative;
+
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+  &__name {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding-right: 15px;
+
+    cursor: pointer;
+    span {
+      display: block;
+      padding: 0 23px 0 15px;
+
+      font-size: 13px;
+      line-height: 32px;
+      font-family: "IBMPlexSansMedium", sans-serif;
+      color: #596890;
+    }
+    &:hover {
+      .page-filter-list-item__input {
+        background-color: #E7ECF8;
+      }
+    }
+  }
+  &__input[type="text"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    padding: 0 28px 0 13px;
+
+    font-size: 13px;
+    line-height: 28px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+
+    background-color: #fff;
+    border-color: transparent;
+
+    transition: 0.2s linear;
+    &::placeholder {
+      color: #596890;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      background-color: #fff;
+      border-color: #E7ECF8;
+      &:hover {
+        cursor: text;
+      }
+    }
+  }
+  &__drop {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: 2;
+    svg {
+      fill: #596890;
+    }
+  }
+  &.active {
+    .page-filter-drop-list {
+      display: block;
+    }
+  }
+}
+
+.single-select {
+  .page-filter-select__control {
+    min-height: unset;
+    height: 32px;
+
+    border-radius: 2px;
+  }
+
+  .page-filter-select__menu {
+    width: max-content;
+    max-width: 480px;
+  }
+
+  .page-filter-select__value-container {
+    padding: 0 6px;
+    > div {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page-filter-select__placeholder {
+    font-size: 13px;
+    line-height: 28px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+    + div {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page-filter-select__option {
+    font-size: 13px;
+    line-height: 16px;
+
+    cursor: pointer;
+  }
+
+  .page-filter-select__single-value {
+    font-size: 13px;
+    line-height: 28px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+    + div {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page-filter-select__input {
+    input[type="text"] {
+      height: 28px;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      font-size: 13px !important;
+      line-height: 28px;
+      font-family: "IBMPlexSansMedium", sans-serif !important;
+      color: #596890 !important;
+      box-sizing: border-box;
+      + div {
+        font-size: 13px;
+        line-height: 28px;
+        font-family: "IBMPlexSansMedium", sans-serif;
+        color: #596890;
+      }
+    }
+  }
+
+  .page-filter-select__indicator {
+    padding: 0 2px;
+  }
+}
+

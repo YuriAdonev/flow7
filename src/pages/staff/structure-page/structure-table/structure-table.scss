@@ -1,0 +1,16 @@
+.structure-table {
+  margin-top: 40px;
+  &__name {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  &__cipher {
+    width: 160px;
+  }
+  &__equipments {
+    width: 140px;
+  }
+  &__staff {
+    width: 140px;
+  }
+}

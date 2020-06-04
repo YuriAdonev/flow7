@@ -1,0 +1,103 @@
+.account-profile-form-value {
+  position: relative;
+  width: 320px;
+  &__edit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    span {
+      display: block;
+
+      font-size: 12px;
+      color: #113FB4;
+
+      cursor: pointer;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+  &__save {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    z-index: 3;
+    display: block;
+
+    cursor: pointer;
+
+    svg {
+      display: block;
+      fill: #596890;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+  &__input {
+    &[type="text"],
+    &[type="password"] {
+      position: relative;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: 36px;
+
+      line-height: 32px;
+
+      border-color: transparent;
+      border-radius: 4px;
+      &::placeholder {
+        color: #9AA3BA;
+      }
+      &.editable {
+        border-color: #E7ECF8;
+      }
+    }
+  }
+  &__url {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 38px;
+    padding: 0 13px;
+
+    font-size: 13px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    &--current {
+      color: transparent;
+    }
+    &--base {
+      margin-left: 2px;
+      color: #9AA3BA;
+    }
+  }
+  &.account-profile-form-value--url {
+    .account-profile-form-value__input {
+      &[type="text"],
+      &[type="password"] {
+        width: 100%;
+        height: 36px;
+
+        line-height: 32px;
+        background-color: transparent;
+      }
+    }
+    .account-profile-form-value__url {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

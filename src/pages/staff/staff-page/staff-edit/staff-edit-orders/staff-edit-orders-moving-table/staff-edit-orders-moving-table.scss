@@ -1,0 +1,26 @@
+.staff-edit-orders-moving-table {
+  margin-top: 10px;
+
+  &__date {
+    width: 140px;
+  }
+  &__post {
+  }
+  &__division {
+    width: 260px;
+    padding-right: 10px;
+  }
+  &__order-number {
+    width: 140px;
+  }
+  &__order-file {
+    width: 140px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__status {
+    width: 125px;
+  }
+}

@@ -1,0 +1,13 @@
+.subdivisions-table {
+  &__name {
+    flex-grow: 1;
+  }
+  &__chief {
+    flex-shrink: 0;
+    width: 360px;
+
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+}

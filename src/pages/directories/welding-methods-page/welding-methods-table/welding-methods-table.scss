@@ -1,0 +1,13 @@
+.welding-methods-table {
+  &__name {
+    flex-grow: 1;
+  }
+  &__cipher {
+    flex-shrink: 0;
+    width: 200px;
+  }
+  &__number {
+    flex-shrink: 0;
+    width: 200px;
+  }
+}

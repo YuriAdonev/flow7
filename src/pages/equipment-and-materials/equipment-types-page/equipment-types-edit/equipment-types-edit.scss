@@ -1,0 +1,25 @@
+.equipment-types-edit {
+  margin: 32px 0 0;
+  &__error {
+    font-size: 10px;
+    color: red;
+  }
+  &__btn {
+    width: 155px;
+    margin: 38px 35px 0;
+  }
+}
+
+.equipment-types-edit-name {
+  padding: 0 35px;
+  &__input[type="text"] {
+    display: block;
+    width: 100%;
+    &.error {
+      border-color: red;
+    }
+    &:focus {
+      border-color: #113FB4;
+    }
+  }
+}

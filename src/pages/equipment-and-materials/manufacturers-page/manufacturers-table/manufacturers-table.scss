@@ -1,0 +1,17 @@
+.manufacturers-table {
+  &__name {
+    flex-grow: 1;
+  }
+  &__models-count {
+    width: 110px;
+  }
+  &__country {
+    width: 180px;
+  }
+  &__equipment-types {
+    width: 400px;
+  }
+  .table__col {
+    cursor: pointer;
+  }
+}

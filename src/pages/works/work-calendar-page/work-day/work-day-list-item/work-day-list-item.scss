@@ -1,0 +1,47 @@
+.work-day-content-col-item {
+  margin-bottom: 10px;
+  padding: 9px 10px 11px;
+
+  background-color: #fff;
+  border-radius: 3px;
+  &__number {
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #000;
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 7px;
+
+    font-size: 11px;
+    line-height: 13px;
+    color: #000;
+  }
+  &__label {
+    margin-right: 5px;
+  }
+  &__value {
+    font-family: "IBMPlexSansMedium", sans-serif;
+
+  }
+  &__confirmed {
+    display: flex;
+
+    font-size: 11px;
+    line-height: 11px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #56C114;
+    span {
+      margin-left: 5px;
+    }
+    .red {
+      color: #F70B0B;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,16 @@
+.staff-edit-orders-interruption-table {
+  margin-top: 10px;
+  &__date {
+    width: 140px;
+  }
+  &__desc {
+    flex-grow: 1;
+  }
+  &__file {
+    width: 200px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

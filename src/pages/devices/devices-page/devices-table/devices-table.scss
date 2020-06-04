@@ -1,0 +1,32 @@
+.devices-table {
+  &__serial-number {
+    width: 230px;
+  }
+  &__model {
+    width: 210px;
+  }
+  &__date {
+    width: 158px;
+  }
+  &__slots {
+    width: 97px;
+  }
+  &__type {
+  }
+  &__online {
+    width: 70px;
+  }
+  &__online-indicator {
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    &--online {
+      background-color: #29D63B;
+    }
+    &--offline {
+      background-color: #C80000;
+    }
+  }
+}

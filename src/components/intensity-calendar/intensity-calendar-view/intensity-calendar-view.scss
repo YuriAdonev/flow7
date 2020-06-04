@@ -1,0 +1,43 @@
+.intensity-calendar-view {
+  display: flex;
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    svg {
+      display: block;
+    }
+    &--green {
+      svg {
+        fill: #56C114;
+      }
+    }
+    &--yellow {
+      svg {
+        fill: #F9D30A;
+      }
+    }
+    &--red {
+      svg {
+        fill: #C80000;
+      }
+    }
+  }
+  &__desc {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #9AA3BA;
+  }
+}

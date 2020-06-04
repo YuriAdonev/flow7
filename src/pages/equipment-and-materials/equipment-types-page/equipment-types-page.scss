@@ -1,0 +1,8 @@
+.equipment-types-table {
+  &__name {
+    &.table__col {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

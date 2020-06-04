@@ -1,0 +1,24 @@
+.equipment-type-edit-table {
+  &__characteristic {
+    svg {
+      display: block;
+      margin-right: 10px;
+      fill: rgba(#000, 0.2);
+    }
+  }
+  &__required {
+    width: 120px;
+    .checkbox {
+      margin-left: 35px;
+    }
+  }
+  &__value-type {
+    width: 200px;
+  }
+  &__default {
+    width: 200px;
+  }
+  &__units {
+    width: 200px;
+  }
+}

@@ -1,0 +1,50 @@
+.work-day-content-col {
+  width: 340px;
+  padding: 11px 15px 25px;
+
+  background-color: #F2F3F5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+    padding-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+
+    border-bottom: 1px solid #E5E5E5;
+  }
+  &__title {}
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+  &__footer {
+    display: flex;
+    margin-top: 17px;
+  }
+  &__add {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+
+    cursor: pointer;
+  }
+  &:nth-child(3) {
+    .work-day-content-drop-menu {
+      left: auto;
+      right: 0;
+    }
+  }
+}

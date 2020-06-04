@@ -1,0 +1,38 @@
+.slave-nav-item {
+  //width: 234px;
+
+  &__link {
+    display: block;
+    padding: 6px 7px;
+    margin: 0 0 4px;
+
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #fff;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+
+      background-color: rgba(#7A838E, 0.08);
+    }
+
+    &.active {
+      background-color: rgba(#113FB4, 0.5);
+      border: 2px solid rgba(#fff, 0.34);
+
+      &:hover,
+      &:focus {
+        background-color: rgba(#113FB4, 0.5);
+      }
+    }
+  }
+}

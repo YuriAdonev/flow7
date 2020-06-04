@@ -1,0 +1,52 @@
+.device-details-settings-base {
+  margin-top: 30px;
+  padding: 0 35px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__item {
+    width: calc(50% - 10px);
+  }
+  &__label {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+  }
+  &__input[type="text"] {
+    width: 100%;
+
+    background-color: #F2F3F5;
+    border: transparent;
+  }
+  &__btn {
+    width: 155px;
+    margin: 30px 0 0 35px;
+  }
+  &__reload {
+    width: 155px;
+    margin-top: 27px;
+  }
+}
+
+.device-details-settings-sensors {
+  margin: 50px 0 0;
+  &__wrap {
+    padding: 0 35px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #353E55;
+  }
+  &__desc {
+    margin-top: 7px;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #596890;
+  }
+}

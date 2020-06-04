@@ -1,0 +1,52 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 110;
+
+  padding-left: 70px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-sizing: border-box;
+  transition: 0.2s linear;
+
+  //@media (min-width: 1460px) {
+  //  left: 320px;
+  //}
+
+  &__wrap {
+    height: 100%;
+    padding: 0 0 50px;
+
+    background-color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  &__close {
+    position: absolute;
+    top: 32px;
+    left: 28px;
+    cursor: pointer;
+    svg {
+      display: block;
+
+      fill: #113FB4;
+    }
+  }
+  .header {
+    width: 1070px;
+    padding: 0;
+    margin: 0 auto 0 54px;
+  }
+  &--wide {
+    .header {
+      width: auto;
+      padding: 0;
+      margin: 0 35px;
+    }
+  }
+}

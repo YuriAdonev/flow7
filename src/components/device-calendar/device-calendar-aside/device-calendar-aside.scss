@@ -1,0 +1,58 @@
+.device-calendar-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  &__nav {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+
+    background-color: #E7ECF8;
+    border-radius: 50%;
+    svg {
+      display: block;
+    }
+  }
+  &__days {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      height: 21px;
+      font-size: 9px;
+      line-height: 11px;
+      font-family: "IBMPlexSansMedium", sans-serif;
+      color: #596890;
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  &.left {
+    margin-right: 20px;
+    .device-calendar-aside__nav {
+      padding-right: 2px;
+    }
+    .device-calendar-aside__days {
+      align-items: flex-start;
+    }
+  }
+  &.right {
+    margin-left: 20px;
+    .device-calendar-aside__nav {
+      padding-left: 2px;
+    }
+    .device-calendar-aside__days {
+      align-items: flex-end;
+    }
+  }
+}

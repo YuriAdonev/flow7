@@ -1,0 +1,53 @@
+.calendar-widget-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.calendar-widget-legend-item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 38px;
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin-right: 11px;
+
+    border-radius: 50%;
+  }
+  &__desc {
+    font-size: 10px;
+    line-height: 10px;
+    color: #596890;
+  }
+  &:nth-child(1) {
+    &:before {
+      background-color: rgba(#113FB4, 0.2);
+    }
+  }
+  &:nth-child(2) {
+    &:before {
+      background-color: #9693F0;
+    }
+  }
+  &:nth-child(3) {
+    &:before {
+      background-color: #A773EA;
+    }
+  }
+  &:nth-child(4) {
+    &:before {
+      background-color: #640C9A;
+    }
+  }
+  &:nth-child(5) {
+    &:before {
+      background-color: #B4115F;
+    }
+  }
+}

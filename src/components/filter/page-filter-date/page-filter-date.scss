@@ -1,0 +1,27 @@
+.page-filter-date {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__btn {
+    margin: 0 10px 0 0;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    svg {
+      fill: #596890;
+    }
+  }
+  &__today {
+    font-size: 13px;
+    line-height: 13px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+  }
+  input[type="text"] {
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+  }
+}

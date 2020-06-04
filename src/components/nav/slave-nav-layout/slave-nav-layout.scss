@@ -1,0 +1,87 @@
+.slave-nav {
+  height: 100%;
+
+  background-color: #0D318F;
+  &__header {
+    display:  flex;
+    width: 100%;
+    padding: 19px 18px;
+
+    box-sizing: border-box;
+  }
+  &__avatar {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+
+    background-color: #C4C4C4;
+    border-radius: 2px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    font-size: 13px;
+    line-height: 17px;
+    white-space: nowrap;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #fff;
+  }
+  &__title {
+    width: 100%;
+    margin-top: 3px;
+
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    font-family: "IBMPlexSansText", sans-serif;
+    color: rgba(#fff, 0.8);
+
+    overflow-x: hidden;
+  }
+  &__sublist {
+    margin-top: 36px;
+    padding: 0 18px;
+
+    list-style: none;
+  }
+  &__close {
+    display: none;
+  }
+  &--light {
+    background-color: #113FB4;
+  }
+}
+
+.slave-nav-extended {
+  padding-top: 6px;
+  &__title {
+    margin: 0 0 10px;
+    padding: 6px 20px 5px;
+
+    font-size: 9px;
+    line-height: 9px;
+    text-transform: uppercase;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #fff;
+
+    background-color: #0F38A4;
+  }
+  &__list {
+    margin: 0;
+    padding: 0 18px;
+
+    list-style: none;
+  }
+}
+
+.css-wwwtll {
+  background-color: transparent;
+  &:hover {
+    background-color: transparent !important;
+  }
+}

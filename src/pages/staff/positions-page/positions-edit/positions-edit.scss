@@ -1,0 +1,26 @@
+.positions-edit {
+  margin: 20px 0 0;
+  //padding: 0 35px;
+  &__error {
+    font-size: 10px;
+    color: red;
+  }
+  &__btn {
+    width: 155px;
+    margin: 38px 35px 0;
+  }
+}
+
+.positions-edit-name {
+  padding: 0 35px;
+  &__input[type="text"] {
+    display: block;
+    width: 100%;
+    &:focus {
+      border-color: #113FB4;
+    }
+    &.error {
+      border-color: red;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.equipment-accounting-edit-used {
+  &__head {
+    display: flex;
+  }
+  &__datepicker {
+    margin-left: auto;
+  }
+  &__work {
+    margin-top: 50px;
+    padding: 0;
+  }
+}
+
+.equipment-accounting-edit-used-intensity {
+  margin-top: 20px;
+}
+.equipment-accounting-edit-used-charts {
+  margin-top: 50px;
+  &__wrap {
+    margin-top: 30px;
+  }
+}
+
+.equipment-accounting-edit-used-charts-item {
+  margin-bottom: 40px;
+}

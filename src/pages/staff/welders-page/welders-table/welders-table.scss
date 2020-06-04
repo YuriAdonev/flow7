@@ -1,0 +1,35 @@
+.welders-table {
+  margin-top: 60px;
+  &__item {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
+  &__wrap {
+
+  }
+  &__head {}
+  &__drop {
+    width: 50px;
+  }
+  &__name {
+    width: 383px;
+  }
+  &__birthday {
+    width: 121px;
+  }
+  &__stamp {
+    width: 84px;
+  }
+  &__subdivision {
+    width: 108px;
+  }
+  &__brigade {
+    width: 109px;
+  }
+  &__card-number {
+    width: 94px;
+  }
+  &__status {
+    width: 122px;
+  }
+}

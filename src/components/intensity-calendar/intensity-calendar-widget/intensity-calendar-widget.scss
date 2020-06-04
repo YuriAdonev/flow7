@@ -1,0 +1,68 @@
+.intensity-calendar-widget {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  &.three {
+
+  }
+  &.two {
+    .intensity-calendar-widget-item__value {
+      justify-content: space-around;
+    }
+    .intensity-calendar-widget-item__col {
+      width: 6px;
+      border-radius: 3px;
+    }
+  }
+  &.one {
+    .intensity-calendar-widget-item__value {
+      justify-content: center;
+    }
+    .intensity-calendar-widget-item__col {
+      width: 13px;
+      border-radius: 7px;
+    }
+  }
+}
+
+.intensity-calendar-widget-item {
+  &:hover,
+  &.current {
+    .intensity-calendar-widget-item__value {
+      opacity: 1;
+    }
+  }
+  &__value {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 18px;
+    height: 120px;
+    margin-bottom: 12px;
+
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s linear;
+  }
+  &__col {
+    width: 4px;
+
+    border-radius: 2px;
+    &--red {
+      background-color: #C80000;
+    }
+    &--yellow {
+      background-color: #F9D30A;
+    }
+    &--green {
+      background-color: #11B448;
+    }
+  }
+  &__day {
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #596890;
+  }
+}

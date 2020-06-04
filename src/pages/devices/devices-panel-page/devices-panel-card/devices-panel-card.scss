@@ -1,0 +1,149 @@
+.devices-panel-card {
+  width: 340px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 13px 15px 22px;
+
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #353E55;
+  }
+  &__subtitle {
+    display: flex;
+    margin-top: 4px;
+  }
+  &__status {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+    &--online {
+      background-color: #29D63B;
+    }
+    &--offline {
+      background-color: #C80000;
+    }
+  }
+  &__desc {
+    font-size: 10px;
+    line-height: 13px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+  }
+  &__triggers {
+    display: flex;
+    margin-top: 17px;
+  }
+  &__tabs {
+    margin-top: 17px;
+  }
+}
+
+.devices-panel-card-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-right: 5px;
+  padding: 2px 11px 0 7px;
+
+  font-size: 9px;
+  font-family: "IBMPlexSansMedium", sans-serif;
+  color: #596890;
+
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 2px;
+    margin-right: 6px;
+  }
+  &.active {
+    color: #fff;
+    background-color: #9AA3BA;
+    border-color: #9AA3BA;
+  }
+  &__amperage {
+    &:before {
+      background-color: #113FB4;
+    }
+  }
+  &__voltage {
+    &:before {
+      background-color: #F9D30A;
+    }
+  }
+  &__wire {
+    &:before {
+      background-color: #9D11B4;
+    }
+  }
+  &__gas {
+    &:before {
+      background-color: #11B448;
+    }
+  }
+}
+
+.devices-panel-card-tab {
+  display: none;
+  &.active {
+    display: block;
+  }
+  &__chart {}
+  &__footer {
+    display: flex;
+    justify-content: center;
+    margin: 27px 0 0;
+  }
+  &__more {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #9AA3BA;
+
+    &:hover {
+      text-decoration: none;
+      color: #596890;
+    }
+  }
+}
+
+.devices-panel-card-tab-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    padding: 0 10px;
+
+    background-color: #F2F3F7;
+    border-radius: 4px;
+  }
+  &__value {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "IBMPlexSansBold", sans-serif;
+    color: #596890;
+  }
+  &__desc {
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #9AA3BA;
+  }
+}

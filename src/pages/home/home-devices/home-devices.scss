@@ -1,0 +1,10 @@
+.home-devices {
+  margin-top: 29px;
+  padding: 0 35px;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.staff-table {
+  margin-top: 40px;
+  &__last-name {
+    width: 200px;
+  }
+  &__first-name {
+    width: 180px;
+  }
+  &__position {
+    width: 260px;
+  }
+  &__division {
+  }
+  &__card-number {
+    flex-shrink: 0;
+    width: 180px;
+  }
+}

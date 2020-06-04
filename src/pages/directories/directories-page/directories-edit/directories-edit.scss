@@ -1,0 +1,43 @@
+.directories-edit {
+  margin-top: 40px;
+  padding: 0 35px;
+  &__error {
+    font-size: 10px;
+    color: red;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    label {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.directories-edit-name {
+  width: 550px;
+  margin-bottom: 20px;
+  &__input[type="text"] {
+    display: block;
+    width: 100%;
+    &:focus {
+      border-color: #113FB4;
+    }
+    &.error {
+      border-color: red;
+    }
+  }
+}
+
+.directories-edit-checkbox {
+  display: flex;
+  align-items: center;
+
+  &__desc {
+    display: block;
+
+    font-size: 13px;
+  }
+}

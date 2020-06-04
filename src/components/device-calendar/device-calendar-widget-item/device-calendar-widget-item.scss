@@ -1,0 +1,76 @@
+.device-calendar-widget-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:not(:last-child) {
+    margin-left: 20px;
+  }
+  &__head {
+    flex-shrink: 0;
+  }
+  &__month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    padding: 0 12px 2px;
+
+    font-size: 9px;
+    line-height: 11px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+
+    border-radius: 12px;
+  }
+  &__block {
+    display: flex;
+    margin-top: auto;
+  }
+  &__col {
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+  &__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+
+    font-size: 9px;
+    line-height: 11px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #fff;
+
+    &.unused {
+      color: #9AA3BA;
+      background-color: #f0f0f0;
+    }
+    &.low {
+      color: #9AA3BA;
+      background-color: #E7ECF8;
+    }
+    &.medium {
+
+      background-color: #9693F0;
+    }
+    &.large {
+      background-color: #A773EA;
+    }
+    &.extra {
+      background-color: #640C9A;
+    }
+    &.current {
+      background-color: #B4115F;
+    }
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+  &.current {
+    .device-calendar-widget-item__month {
+      background-color: #E7ECF8;
+    }
+  }
+}

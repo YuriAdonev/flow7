@@ -1,0 +1,19 @@
+.sort-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  cursor: pointer;
+
+  &__name {
+
+  }
+  &__arrows {
+    margin-left: 4px;
+
+    svg {
+      display: block;
+      fill: #596890;
+    }
+  }
+}

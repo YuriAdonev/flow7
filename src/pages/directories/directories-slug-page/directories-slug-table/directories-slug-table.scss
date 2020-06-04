@@ -1,0 +1,19 @@
+.directories-slug-table {
+  margin-top: 30px;
+  &__name {
+    flex-grow: 1;
+  }
+  &__abbr {
+    flex-shrink: 0;
+    width: 200px;
+  }
+  &__description {
+    flex-shrink: 0;
+    width: 350px;
+  }
+}
+
+.directories-slug-table-add {
+  width: 155px;
+  margin: 30px 0 0 35px;
+}

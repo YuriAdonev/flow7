@@ -1,0 +1,11 @@
+.positions-table {
+  margin-top: 30px;
+  &__position {
+    flex-grow: 1;
+    cursor: pointer;
+
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+}

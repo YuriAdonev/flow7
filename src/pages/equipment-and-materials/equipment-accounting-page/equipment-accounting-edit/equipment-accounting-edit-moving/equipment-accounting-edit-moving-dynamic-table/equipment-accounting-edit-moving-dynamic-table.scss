@@ -1,0 +1,19 @@
+.equipment-accounting-edit-moving-dynamic-table {
+  margin: 20px 0 0;
+  &__date {
+    width: 100px;
+  }
+  &__subdivision {
+    width: 220px;
+    padding-right: 10px;
+  }
+  &__position {
+    width: 320px;
+  }
+  &__desc {
+    flex-grow: 1;
+  }
+  &__status {
+    width: 120px;
+  }
+}

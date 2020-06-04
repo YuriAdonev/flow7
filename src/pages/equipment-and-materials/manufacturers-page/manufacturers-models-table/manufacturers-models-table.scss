@@ -1,0 +1,12 @@
+.manufacturers-models-table {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  &__name {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  &__equipment-type {
+    flex-shrink: 0;
+    width: 350px;
+  }
+}

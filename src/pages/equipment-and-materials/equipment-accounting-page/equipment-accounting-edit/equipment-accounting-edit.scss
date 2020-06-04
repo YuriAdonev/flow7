@@ -1,0 +1,163 @@
+.equipment-accounting-edit-triggers {
+  padding: 0 35px;
+}
+
+.equipment-accounting-edit {
+  margin-top: 30px;
+  padding: 0 35px;
+  &__wrap {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+  &__btn {
+    width: 155px;
+  }
+}
+
+.equipment-accounting-edit-fields {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  &__custom {
+    padding: 40px 0 0;
+  }
+}
+
+.equipment-accounting-edit-fields-item {
+  position: relative;
+  display: block;
+  width: calc(50% - 15px);
+  margin: 0 0 20px;
+
+  //&__input[type="text"] {
+  //  width: 100%;
+  //  height: 36px;
+  //  margin: 0;
+  //
+  //  background-color: #F2F3F5;
+  //  border: transparent;
+  //  &::placeholder {
+  //    color: #9AA3BA;
+  //  }
+  //  &.empty {
+  //    border: 2px solid #c80000;
+  //    box-sizing: border-box;
+  //  }
+  //}
+
+  //&__label {
+  //  margin-bottom: 9px;
+  //
+  //  font-size: 12px;
+  //  line-height: 16px;
+  //  font-family: "IBMPlexSansMedium", sans-serif;
+  //  color: #596890;
+  //}
+
+  //&__textarea {
+  //  width: 100%;
+  //  height: 197px;
+  //  margin: 0;
+  //  padding: 10px 8px;
+  //
+  //  font-size: 13px;
+  //  line-height: 16px;
+  //  font-family: "IBMPlexSansMedium", sans-serif;
+  //  color: #596890;
+  //
+  //  background-color: #F2F3F5;
+  //  border: 2px solid transparent;
+  //  border-radius: 2px;
+  //  box-sizing: border-box;
+  //  resize: none;
+  //  outline: none;
+  //
+  //  &::placeholder {
+  //    color: #9AA3BA;
+  //  }
+  //}
+
+  &--file {
+    label {
+      display: block;
+    }
+    .equipment-accounting-edit-fields-item__input {
+      display: none;
+    }
+  }
+  .el-date-editor {
+    width: 100%;
+
+  }
+
+  .el-input__icon {
+    right: 4px;
+    color: #9AA3BA;
+  }
+
+  //input[type="text"] {
+  //  width: 100%;
+  //  height: 36px;
+  //  margin: 0;
+  //
+  //  background-color: #F2F3F5;
+  //  border: transparent;
+  //  &::placeholder {
+  //    color: #9AA3BA;
+  //  }
+  //}
+  //&.empty {
+  //  input[type="text"] {
+  //    border: 2px solid #c80000;
+  //    box-sizing: border-box;
+  //  }
+  //}
+}
+
+.equipment-accounting-edit-fields-item-file {
+  position: relative;
+  &__placeholder {
+    height: 36px;
+    padding: 0 13px;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: normal;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #7A838E;
+    background-color: #F2F3F5;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    > a {
+      text-decoration: none;
+      font-family: inherit;
+      color: inherit;
+    }
+    &.fill {
+      color: #596890;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 12px;
+
+
+
+    svg {
+      display: block;
+      fill: #9AA3BA;
+
+      cursor: pointer;
+    }
+  }
+}

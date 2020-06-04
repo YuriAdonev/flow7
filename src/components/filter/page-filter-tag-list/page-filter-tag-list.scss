@@ -1,0 +1,45 @@
+.page-filter-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.page-filter-tag-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  margin-right: 10px;
+  padding: 0 7px 2px 9px;
+
+  background-color: #E7ECF8;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  span {
+    margin-right: 16px;
+    padding-top: 3px;
+
+    font-size: 10px;
+    line-height: 10px;
+    color: #113FB4;
+  }
+
+  &__delete {
+
+    cursor: pointer;
+
+    svg {
+      fill: #113FB4;
+
+      transition: 0.2s linear;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: darken(#113FB4, 15%);
+      }
+    }
+  }
+}

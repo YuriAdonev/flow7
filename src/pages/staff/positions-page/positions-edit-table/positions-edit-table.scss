@@ -1,0 +1,21 @@
+.positions-edit-table {
+  &__label {
+    svg {
+      display: block;
+      margin-right: 10px;
+      fill: rgba(#000, 0.2);
+    }
+  }
+  &__required {
+    width: 120px;
+    .checkbox {
+      margin-left: 30px;
+    }
+  }
+  &__type {
+    width: 200px;
+  }
+  &__default {
+    width: 240px;
+  }
+}

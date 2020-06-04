@@ -1,0 +1,9 @@
+.brigades-table {
+  &__name {
+    flex-grow: 1;
+  }
+  &__stigma {
+    flex-shrink: 0;
+    width: 200px;
+  }
+}

@@ -1,0 +1,51 @@
+.calendar-widget-chart-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+
+  &__desc {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+
+    display: none;
+
+    font-size: 9px;
+    line-height: 9px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #000;
+
+    transform: translateX(-50%);
+  }
+  &__col {
+    position: relative;
+
+    width: 13px;
+    height: 13px;
+
+    background-color: #E7ECF8;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    &:hover .calendar-widget-chart-item__desc {
+      display: block;
+    }
+    &.current {
+      background-color: #B4115F;
+
+      .calendar-widget-chart-item__desc {
+        display: block;
+      }
+    }
+  }
+  &__day {
+    margin-top: 10px;
+
+    font-size: 9px;
+    line-height: 9px;
+    color: #596890;
+  }
+}

@@ -1,0 +1,29 @@
+.device-edit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 35px;
+
+  &__item {
+    width: calc(50% - 15px);
+  }
+  &__label {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+  }
+  &__input[type="text"] {
+    width: 100%;
+
+    background-color: #F2F3F5;
+    border: transparent;
+  }
+  &__error {
+    font-size: 10px;
+    color: red;
+  }
+  &__btn {
+    width: 155px;
+    margin: 30px 0 0 35px;
+  }
+}

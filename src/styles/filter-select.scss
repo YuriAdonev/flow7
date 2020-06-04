@@ -1,0 +1,83 @@
+.filter-select {
+  position: relative;
+
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+  &__name {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding-right: 15px;
+
+    border: 2px solid #E7ECF8;
+    border-radius: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    span {
+      display: block;
+      padding: 0 23px 0 15px;
+
+      font-size: 13px;
+      line-height: 28px;
+      font-family: "IBMPlexSansMedium", sans-serif;
+      color: #596890;
+    }
+  }
+  &__drop {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: 2;
+    svg {
+      fill: #596890;
+    }
+  }
+  &.active {
+    .filter-select__name {
+      border-color: #113FB4;
+    }
+    .filter-select-drop-list {
+      display: block;
+    }
+  }
+}
+
+.filter-select-drop-list {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 3;
+  display: none;
+  min-width: 100%;
+  margin: 0;
+  padding: 5px 0;
+
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+
+  box-sizing: border-box;
+  list-style: none;
+
+  &__item {
+    padding: 0 10px;
+
+    font-size: 13px;
+    line-height: 26px;
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition: 0.2s linear;
+    &:hover {
+      background-color: #E7ECF8;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.devices-panel {
+  margin-top: 29px;
+  padding: 0 35px;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

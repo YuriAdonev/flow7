@@ -1,0 +1,23 @@
+.equipment-accounting-edit-sensors-table {
+  &__date {
+    width: 190px;
+  }
+  &__device {
+    flex-grow: 1;
+  }
+  &__serial {
+    width: 160px;
+  }
+  &__type {
+    width: 160px;
+  }
+  &__idle {
+    width: 130px;
+  }
+  &__equipment {
+    width: 180px;
+  }
+  &__status {
+    width: 120px;
+  }
+}

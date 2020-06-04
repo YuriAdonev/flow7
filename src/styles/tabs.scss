@@ -1,0 +1,25 @@
+.tabs-triggers {
+  display: flex;
+
+  border-bottom: 1px solid #E7ECF8;
+  &__item {
+    padding: 10px 20px;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #9AA3BA;
+
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+
+    &.active {
+      color: #596890;
+
+      border-color: #596890;
+    }
+    &--right {
+      margin-left: auto;
+    }
+  }
+}

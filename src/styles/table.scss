@@ -1,0 +1,133 @@
+table {
+  border-spacing: 0px;
+}
+.table {
+  margin-top: 60px;
+  width: 100%;
+  &__empty {
+    margin-top: 20px;
+
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #4D4D4D;
+  }
+  &__error {
+    margin-top: 20px;
+
+    font-size: 13px;
+    color: red;
+    text-align: center;
+  }
+  &__row {
+
+    &--head {
+      .table__col {
+        height: 40px;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: normal;
+        text-align: left;
+        font-family: "IBMPlexSansMedium", sans-serif;
+        color: #596890;
+
+        // border-top: 1px solid #E7ECF8;
+        cursor: default;
+      }
+    }
+    &.animate {
+      animation: blink 0.5s forwards;
+    }
+  }
+  &__tree {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+
+    svg {
+      display: block;
+      fill: #596890;
+    }
+  }
+  &__structure-tree {
+    display: flex;
+    align-items: center;
+
+    svg {
+      display: block;
+      margin-right: 10px;
+      fill: #596890;
+    }
+  }
+  //&__parent {
+  //  border-bottom: 1px solid #E7ECF8;
+  //  .table__row {
+  //    border-bottom: 0;
+  //  }
+  //}
+  //&__child {
+  //  .table__row {
+  //    border-top: 1px solid #E7ECF8;
+  //    border-bottom: none;
+  //  }
+  //}
+  &__col {
+    padding: 12px 5px 11px;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "IBMPlexSansText", sans-serif;
+    color: #4D4D4D;
+
+    border-bottom: 1px solid #E7ECF8;
+    box-sizing: border-box;
+
+    input[type="text"] {
+      width: 100%;
+      margin-right: 20px;
+      padding: 0;
+
+      font-size: 13px;
+      color: #4E4E4E;
+
+      border: none;
+      background-color: transparent;
+      border-radius: 0;
+      &:focus {
+        border-bottom: 1px solid #000;
+      }
+    }
+    &--actions {
+      width: 59px;
+    }
+    &--first {
+      padding-left: 35px;
+    }
+    &--last {
+      padding-right: 35px;
+    }
+    &--save {
+      width: 86px;
+    }
+    .label {
+      display: none;
+    }
+  }
+}
+
+.editable-table-add {
+  width: 155px;
+  margin: 0 35px 20px;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #E7ECF8;
+  }
+  100% {
+    background-color: #fff;
+  }
+}

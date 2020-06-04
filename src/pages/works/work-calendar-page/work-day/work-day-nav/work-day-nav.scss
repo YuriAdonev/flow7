@@ -1,0 +1,29 @@
+.work-day-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__prev {
+    span {
+
+    }
+  }
+  &__next {}
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    svg {
+
+    }
+  }
+  &__current {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+  }
+}

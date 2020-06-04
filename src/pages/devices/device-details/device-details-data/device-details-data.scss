@@ -1,0 +1,52 @@
+.device-details-data {
+  margin: 18px 0 0;
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+  }
+  &__status {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "IBMPlexSansMedium", sans-serif;
+    color: #596890;
+    span {
+      &.online {
+        color: #29D63B;
+      }
+      &.offline {
+        color: #C80000;
+      }
+    }
+  }
+  &__datepicker {
+    margin-left: auto;
+  }
+  &__work {
+    margin-top: 70px;
+  }
+  &__calendar {
+    margin-top: 40px;
+    padding: 0 35px;
+  }
+}
+
+.device-details-data-chart {
+  margin-top: 70px;
+  padding: 0 35px;
+
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "IBMPlexSansSemiBold", sans-serif;
+    color: #353E55;
+  }
+  &__desc {
+    margin-top: 8px;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-family: "IBMPlexSansRegular", sans-serif;
+    color: #596890;
+  }
+}
