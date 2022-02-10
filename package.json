@@ -24,7 +24,7 @@
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.11.0",
     "react": "^16.11.0",
